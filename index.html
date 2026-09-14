@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rowtr Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Rowtr iOS app.">
+<style>
+  :root {
+    --bg: #fbfbfd; --text: #1d1d1f; --muted: #5b5b66; --line: #e3e3ea;
+    --brand: #3b3fbf; --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1020; --text: #f2f2f7; --muted: #a3a3b5; --line: #2a2b40; --brand: #9a9cf5; --card: #17182b; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    padding-inline: 20px;
+  }
+  main { max-width: 720px; margin: 0 auto; padding-block: 48px 72px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 8px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 1.25rem; margin: 36px 0 8px; }
+  h3 { font-size: 1.05rem; margin: 24px 0 6px; }
+  p, li { color: var(--text); }
+  .meta { color: var(--muted); margin: 0; }
+  nav { margin-top: 12px; }
+  nav a { margin-right: 16px; }
+  a { color: var(--brand); }
+  ul { padding-left: 22px; }
+  .summary {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 16px 20px; margin-top: 24px;
+  }
+  .summary ul { margin: 8px 0 0; }
+  section + section { border-top: 1px solid var(--line); margin-top: 56px; padding-top: 8px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Rowtr Privacy Policy</h1>
+    <p class="meta">Effective date: September 14, 2026</p>
+    <nav><a href="#en">English</a><a href="#tr">Türkçe</a></nav>
+  </header>
+
+  <section id="en" lang="en">
+    <div class="summary">
+      <strong>In short</strong>
+      <ul>
+        <li>The developer of Rowtr does not collect, store or sell any of your data. The app has no servers, no accounts, no analytics, no ads and no tracking.</li>
+        <li>Your OpenRouter API key stays in your device's Keychain.</li>
+        <li>What you send to AI models (messages, images, files, recordings, text) goes directly from your device to OpenRouter, and only after you allow it in the app.</li>
+      </ul>
+    </div>
+
+    <h2>1. Who we are</h2>
+    <p>Rowtr is an iOS app that lets you browse the <a href="https://openrouter.ai">OpenRouter</a> model catalog and use AI models with your own OpenRouter API key. This policy explains what happens to your information when you use the app. Rowtr is an independent app and is not affiliated with OpenRouter.</p>
+
+    <h2>2. Information the developer collects</h2>
+    <p>None. Rowtr does not have a backend. The developer does not receive your API key, your prompts, the model responses, your recordings, your generated images or sounds, or any usage, device or diagnostic information. The app contains no analytics, advertising or tracking software.</p>
+
+    <h2>3. Information stored on your device</h2>
+    <p>The following is stored only on your device, so the app can work:</p>
+    <ul>
+      <li><strong>Your OpenRouter API key</strong>, in the iOS Keychain. You can remove it at any time in Settings. Because iOS may keep Keychain items after an app is deleted, remove the key in Settings before deleting the app if you want it gone.</li>
+      <li><strong>Chats</strong> you start, which are saved automatically so you can continue them.</li>
+      <li><strong>Saved notes</strong>: dictation notes, generated images and chat transcripts you choose to save.</li>
+      <li><strong>Sounds</strong> you generate with speech models, which are saved automatically.</li>
+      <li><strong>Favorites</strong>, your consent choice and whether you finished the welcome screens.</li>
+      <li><strong>A copy of the public model catalog</strong>, so the model list opens quickly and works offline.</li>
+    </ul>
+    <p>You can delete chats, notes and sounds in the app. Deleting the app removes this data from your device, apart from the Keychain note above.</p>
+
+    <h2>4. Information sent to OpenRouter</h2>
+    <p>Rowtr talks to OpenRouter's API directly from your device, using your own API key. Your use of OpenRouter is governed by <a href="https://openrouter.ai/privacy">OpenRouter's Privacy Policy</a> and terms, and OpenRouter forwards requests to the AI provider of the model you choose, whose own policies also apply.</p>
+    <h3>Content you send to AI models</h3>
+    <p>When you use a model, the content needed for that request is sent to OpenRouter:</p>
+    <ul>
+      <li><strong>Chat and vision</strong>: your messages, the conversation so far, an optional system prompt, and any images or PDF files you attach.</li>
+      <li><strong>Web search</strong> (only if you turn it on for a chat): your message is used by OpenRouter to search the web.</li>
+      <li><strong>Dictation</strong>: your voice recording.</li>
+      <li><strong>Image generation</strong>: your prompt.</li>
+      <li><strong>Speech</strong>: the text you want read aloud and the voice you choose.</li>
+    </ul>
+    <p>Rowtr asks for your explicit permission before any of this content is sent. You can review or withdraw that permission at any time in Settings; without it, these features do not send anything.</p>
+    <h3>Requests without your content</h3>
+    <ul>
+      <li><strong>Model catalog</strong>: the app downloads the public list of models. If you have saved an API key, it is included so OpenRouter can show models available to your account.</li>
+      <li><strong>Usage and credits</strong>: if you saved an API key, the app asks OpenRouter for your key's usage and limits to show them in Settings.</li>
+    </ul>
+
+    <h2>5. Device permissions</h2>
+    <ul>
+      <li><strong>Microphone</strong>: used only while you record for dictation. The recording is sent to the model you selected and the temporary recording file is deleted from the device right after it is read.</li>
+      <li><strong>Photo library (add only)</strong>: used only when you tap to save a generated image to Photos. The app cannot read your photos.</li>
+    </ul>
+    <p>Images and PDFs you attach are chosen by you through the system pickers; the app only receives the items you select.</p>
+
+    <h2>6. Links</h2>
+    <p>Web search results and other links open in your browser. Websites you visit have their own privacy policies.</p>
+
+    <h2>7. Children</h2>
+    <p>Rowtr is not directed to children under 13, and the developer does not knowingly collect information from children.</p>
+
+    <h2>8. Changes to this policy</h2>
+    <p>If the app's handling of information changes, this page will be updated and the effective date above will change.</p>
+
+    <h2>9. Contact</h2>
+    <p>Questions about this policy: <a href="mailto:fahri4297@gmail.com">fahri4297@gmail.com</a></p>
+  </section>
+
+  <section id="tr" lang="tr">
+    <h1>Rowtr Gizlilik Politikası</h1>
+    <p class="meta">Yürürlük tarihi: 14 Eylül 2026</p>
+
+    <div class="summary">
+      <strong>Kısaca</strong>
+      <ul>
+        <li>Rowtr'ın geliştiricisi hiçbir verinizi toplamaz, saklamaz veya satmaz. Uygulamanın sunucusu, hesap sistemi, analitiği, reklamı ve takibi yoktur.</li>
+        <li>OpenRouter API anahtarınız cihazınızın Keychain'inde kalır.</li>
+        <li>Yapay zekâ modellerine gönderdiğiniz içerik (mesajlar, görseller, dosyalar, ses kayıtları, metinler) cihazınızdan doğrudan OpenRouter'a gider ve yalnızca uygulamada izin verdikten sonra gönderilir.</li>
+      </ul>
+    </div>
+
+    <h2>1. Biz kimiz</h2>
+    <p>Rowtr, <a href="https://openrouter.ai">OpenRouter</a> model kataloğunu incelemenizi ve yapay zekâ modellerini kendi OpenRouter API anahtarınızla kullanmanızı sağlayan bir iOS uygulamasıdır. Bu politika, uygulamayı kullandığınızda bilgilerinize ne olduğunu açıklar. Rowtr bağımsız bir uygulamadır, OpenRouter ile bağlantılı değildir.</p>
+
+    <h2>2. Geliştiricinin topladığı bilgiler</h2>
+    <p>Hiçbiri. Rowtr'ın sunucusu yoktur. Geliştirici API anahtarınızı, istemlerinizi, model yanıtlarını, ses kayıtlarınızı, ürettiğiniz görsel ve sesleri ya da herhangi bir kullanım, cihaz veya tanılama bilgisini almaz. Uygulamada analitik, reklam veya takip yazılımı bulunmaz.</p>
+
+    <h2>3. Cihazınızda saklanan bilgiler</h2>
+    <p>Uygulamanın çalışabilmesi için aşağıdakiler yalnızca cihazınızda saklanır:</p>
+    <ul>
+      <li><strong>OpenRouter API anahtarınız</strong>, iOS Keychain'de. Ayarlar'dan istediğiniz zaman silebilirsiniz. iOS, uygulama silindikten sonra Keychain kayıtlarını tutabildiği için anahtarın tamamen kalkmasını istiyorsanız uygulamayı silmeden önce Ayarlar'dan kaldırın.</li>
+      <li>Başlattığınız <strong>sohbetler</strong>; kaldığınız yerden sürdürebilmeniz için kendiliğinden kaydedilir.</li>
+      <li><strong>Kayıtlı notlar</strong>: kaydetmeyi seçtiğiniz dikte notları, üretilen görseller ve sohbet dökümleri.</li>
+      <li>Sesli okuma modelleriyle ürettiğiniz ve kendiliğinden kaydedilen <strong>sesler</strong>.</li>
+      <li><strong>Favoriler</strong>, izin tercihiniz ve karşılama ekranlarını tamamlayıp tamamlamadığınız.</li>
+      <li>Model listesinin hızlı ve çevrimdışı açılabilmesi için <strong>herkese açık model kataloğunun bir kopyası</strong>.</li>
+    </ul>
+    <p>Sohbetleri, notları ve sesleri uygulamada silebilirsiniz. Uygulamayı silmek, yukarıdaki Keychain notu dışında bu verileri cihazınızdan kaldırır.</p>
+
+    <h2>4. OpenRouter'a gönderilen bilgiler</h2>
+    <p>Rowtr, OpenRouter API'siyle cihazınızdan doğrudan ve kendi API anahtarınızla konuşur. OpenRouter kullanımınız <a href="https://openrouter.ai/privacy">OpenRouter Gizlilik Politikası</a> ve koşullarına tabidir; OpenRouter istekleri seçtiğiniz modelin yapay zekâ sağlayıcısına iletir ve o sağlayıcının politikaları da geçerlidir.</p>
+    <h3>Modellere gönderdiğiniz içerik</h3>
+    <p>Bir modeli kullandığınızda o istek için gereken içerik OpenRouter'a gönderilir:</p>
+    <ul>
+      <li><strong>Sohbet ve görsel ile sohbet</strong>: mesajlarınız, o ana kadarki konuşma, isteğe bağlı sistem istemi ve eklediğiniz görseller veya PDF dosyaları.</li>
+      <li><strong>Web araması</strong> (yalnızca bir sohbette açarsanız): mesajınız OpenRouter tarafından web'de arama yapmak için kullanılır.</li>
+      <li><strong>Dikte</strong>: ses kaydınız.</li>
+      <li><strong>Görsel üretimi</strong>: isteminiz.</li>
+      <li><strong>Sesli okuma</strong>: okunmasını istediğiniz metin ve seçtiğiniz ses.</li>
+    </ul>
+    <p>Rowtr bu içeriklerden herhangi biri gönderilmeden önce açık izninizi ister. Bu izni Ayarlar'dan istediğiniz zaman gözden geçirebilir veya geri çekebilirsiniz; izin olmadan bu özellikler hiçbir şey göndermez.</p>
+    <h3>İçeriğiniz olmadan yapılan istekler</h3>
+    <ul>
+      <li><strong>Model kataloğu</strong>: uygulama herkese açık model listesini indirir. Kayıtlı bir API anahtarınız varsa, OpenRouter'ın hesabınıza açık modelleri gösterebilmesi için isteğe eklenir.</li>
+      <li><strong>Kullanım ve kredi</strong>: kayıtlı bir API anahtarınız varsa uygulama, Ayarlar'da göstermek için anahtarınızın kullanımını ve limitlerini OpenRouter'dan ister.</li>
+    </ul>
+
+    <h2>5. Cihaz izinleri</h2>
+    <ul>
+      <li><strong>Mikrofon</strong>: yalnızca dikte için kayıt yaparken kullanılır. Kayıt seçtiğiniz modele gönderilir; geçici kayıt dosyası okunduktan hemen sonra cihazdan silinir.</li>
+      <li><strong>Fotoğraf arşivi (yalnızca ekleme)</strong>: yalnızca üretilen bir görseli Fotoğraflar'a kaydetmek için dokunduğunuzda kullanılır. Uygulama fotoğraflarınızı okuyamaz.</li>
+    </ul>
+    <p>Eklediğiniz görselleri ve PDF'leri sistem seçicileriyle siz seçersiniz; uygulama yalnızca seçtiğiniz öğeleri alır.</p>
+
+    <h2>6. Bağlantılar</h2>
+    <p>Web araması sonuçları ve diğer bağlantılar tarayıcınızda açılır. Ziyaret ettiğiniz sitelerin kendi gizlilik politikaları vardır.</p>
+
+    <h2>7. Çocuklar</h2>
+    <p>Rowtr 13 yaşından küçük çocuklara yönelik değildir ve geliştirici bilerek çocuklardan bilgi toplamaz.</p>
+
+    <h2>8. Bu politikadaki değişiklikler</h2>
+    <p>Uygulamanın bilgileri ele alış biçimi değişirse bu sayfa güncellenir ve yukarıdaki yürürlük tarihi değişir.</p>
+
+    <h2>9. İletişim</h2>
+    <p>Bu politikayla ilgili sorular: <a href="mailto:fahri4297@gmail.com">fahri4297@gmail.com</a></p>
+  </section>
+</main>
+</body>
+</html>
