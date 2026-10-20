@@ -84,7 +84,7 @@
       <li><strong>Web search</strong> (only if you turn it on for a chat): your message is used by OpenRouter to search the web.</li>
       <li><strong>Dictation</strong>: your voice recording.</li>
       <li><strong>Image generation</strong>: your prompt and any reference images you add to edit or guide the result. Reference images are not stored by the app.</li>
-      <li><strong>Video generation</strong>: your prompt, the settings you choose and any start or end frame images you add. Frame images are not stored by the app. Before each video, the app shows the estimated cost and what will be sent and asks you to confirm. While a video is being made, the app checks its status with OpenRouter and then downloads the finished video. OpenRouter keeps generated videos for a limited time, and video generation is not covered by OpenRouter's zero data retention option.</li>
+      <li><strong>Video generation</strong>: your prompt, the settings you choose, and either the start or end frame images you add or, for models that support them, the reference images, reference video (up to 15 seconds, converted to 720p) or reference audio (an MP3 or WAV file of up to 15 seconds) you add. Frame images and references are not stored by the app. Before each video, the app shows the estimated cost and what will be sent and asks you to confirm. While a video is being made, the app checks its status with OpenRouter and then downloads the finished video. OpenRouter keeps generated videos for a limited time, and video generation is not covered by OpenRouter's zero data retention option.</li>
       <li><strong>Speech</strong>: the text you want read aloud and the voice you choose.</li>
       <li><strong>Spoken answers and music</strong>: your prompt and, for spoken answers, the voice you choose.</li>
       <li><strong>Similarity and ranking</strong> (embedding and rerank models): your query and the texts you enter to compare or rank. The results are shown on screen and are not stored.</li>
@@ -107,7 +107,7 @@
       <li><strong>Microphone</strong>: used only while you record for dictation. The recording is sent to the model you selected and the temporary recording file is deleted from the device right after it is read.</li>
       <li><strong>Photo library (add only)</strong>: used only when you tap to save a generated image or video to Photos. The app cannot read your photos.</li>
     </ul>
-    <p>Images, videos, PDFs and reference images you attach are chosen by you through the system pickers; the app only receives the items you select.</p>
+    <p>Images, videos, PDFs, reference images and reference videos you attach are chosen by you through the system pickers, and reference audio through the Files picker; the app only receives the items you select.</p>
 
     <h2>6. In-app purchases</h2>
     <p>The free trial and Rowtr Lifetime are processed entirely by Apple through the App Store, under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. The developer does not receive your name, Apple Account, email address or payment details. To decide which features are unlocked, the app reads your signed purchase records from Apple on your device; this information is not sent anywhere else.</p>
@@ -166,7 +166,7 @@
       <li><strong>Web araması</strong> (yalnızca bir sohbette açarsanız): mesajınız OpenRouter tarafından web'de arama yapmak için kullanılır.</li>
       <li><strong>Dikte</strong>: ses kaydınız.</li>
       <li><strong>Görsel üretimi</strong>: isteminiz ve sonucu düzenlemek ya da yönlendirmek için eklediğiniz referans görseller. Referans görseller uygulamada saklanmaz.</li>
-      <li><strong>Video üretimi</strong>: isteminiz, seçtiğiniz ayarlar ve eklediğiniz başlangıç veya bitiş karesi görselleri. Kare görselleri uygulamada saklanmaz. Uygulama her videodan önce tahmini ücreti ve neyin gönderileceğini gösterip onayınızı ister. Video hazırlanırken uygulama durumunu OpenRouter'dan sorar, bitince videoyu indirir. OpenRouter üretilen videoları sınırlı bir süre tutar ve video üretimi OpenRouter'ın sıfır veri saklama seçeneğinin kapsamında değildir.</li>
+      <li><strong>Video üretimi</strong>: isteminiz, seçtiğiniz ayarlar ve eklediğiniz başlangıç veya bitiş karesi görselleri ya da destekleyen modellerde eklediğiniz referans görseller, referans video (en fazla 15 saniye, 720p'ye dönüştürülür) veya referans ses (en fazla 15 saniyelik MP3 ya da WAV dosyası). Kare görselleri ve referanslar uygulamada saklanmaz. Uygulama her videodan önce tahmini ücreti ve neyin gönderileceğini gösterip onayınızı ister. Video hazırlanırken uygulama durumunu OpenRouter'dan sorar, bitince videoyu indirir. OpenRouter üretilen videoları sınırlı bir süre tutar ve video üretimi OpenRouter'ın sıfır veri saklama seçeneğinin kapsamında değildir.</li>
       <li><strong>Sesli okuma</strong>: okunmasını istediğiniz metin ve seçtiğiniz ses.</li>
       <li><strong>Sesli yanıt ve müzik</strong>: isteminiz ve sesli yanıtta seçtiğiniz ses.</li>
       <li><strong>Benzerlik ve sıralama</strong> (embedding ve rerank modelleri): sorgunuz ile karşılaştırmak ya da sıralamak için girdiğiniz metinler. Sonuçlar ekranda gösterilir ve saklanmaz.</li>
@@ -189,7 +189,7 @@
       <li><strong>Mikrofon</strong>: yalnızca dikte için kayıt yaparken kullanılır. Kayıt seçtiğiniz modele gönderilir; geçici kayıt dosyası okunduktan hemen sonra cihazdan silinir.</li>
       <li><strong>Fotoğraf arşivi (yalnızca ekleme)</strong>: yalnızca üretilen bir görseli ya da videoyu Fotoğraflar'a kaydetmek için dokunduğunuzda kullanılır. Uygulama fotoğraflarınızı okuyamaz.</li>
     </ul>
-    <p>Eklediğiniz görselleri, videoları, PDF'leri ve referans görselleri sistem seçicileriyle siz seçersiniz; uygulama yalnızca seçtiğiniz öğeleri alır.</p>
+    <p>Eklediğiniz görselleri, videoları, PDF'leri, referans görselleri ve referans videoları sistem seçicileriyle, referans sesi ise Dosyalar seçicisiyle siz seçersiniz; uygulama yalnızca seçtiğiniz öğeleri alır.</p>
 
     <h2>6. Uygulama içi satın almalar</h2>
     <p>Ücretsiz deneme ve Rowtr Lifetime tamamen Apple tarafından App Store üzerinden, <a href="https://www.apple.com/tr/legal/privacy/">Apple Gizlilik Politikası</a> kapsamında işlenir. Geliştirici adınızı, Apple Hesabınızı, e-posta adresinizi ya da ödeme bilgilerinizi almaz. Hangi özelliklerin açık olduğuna karar vermek için uygulama, Apple'ın imzaladığı satın alma kayıtlarınızı cihazınızda okur; bu bilgi başka hiçbir yere gönderilmez.</p>
