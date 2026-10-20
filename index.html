@@ -60,7 +60,7 @@
     <p>Rowtr is an iOS app that lets you browse the <a href="https://openrouter.ai">OpenRouter</a> model catalog and use AI models with your own OpenRouter API key. This policy explains what happens to your information when you use the app. Rowtr is an independent app and is not affiliated with OpenRouter.</p>
 
     <h2>2. Information the developer collects</h2>
-    <p>None. Rowtr does not have a backend. The developer does not receive your API key, your prompts, the model responses, your recordings, your generated images or sounds, or any usage, device or diagnostic information. The app contains no analytics, advertising or tracking software.</p>
+    <p>None. Rowtr does not have a backend. The developer does not receive your API key, your prompts, the model responses, your recordings, your generated images, videos or sounds, or any usage, device or diagnostic information. The app contains no analytics, advertising or tracking software.</p>
 
     <h2>3. Information stored on your device</h2>
     <p>The following is stored only on your device, so the app can work:</p>
@@ -69,10 +69,11 @@
       <li><strong>Chats</strong> you start, which are saved automatically so you can continue them. Videos you attach to a chat are not stored; only a small preview image and the video length are kept with the chat.</li>
       <li><strong>Saved notes</strong>: dictation notes, generated images and chat transcripts you choose to save.</li>
       <li><strong>Sounds</strong> you generate with speech models, which are saved automatically.</li>
+      <li><strong>Video jobs</strong>: for each video you generate, the prompt, the settings you chose, the status, the cost OpenRouter reports and a small preview image. The video file itself is kept only temporarily in the app's cache, which iOS may clear at any time; save a video to Photos to keep it.</li>
       <li><strong>Favorites</strong>, your consent choice, your provider preferences and whether you finished the welcome screens.</li>
       <li><strong>A copy of the public model catalog</strong>, so the model list opens quickly and works offline.</li>
     </ul>
-    <p>You can delete chats, notes and sounds in the app. Deleting the app removes this data from your device, apart from the Keychain note above.</p>
+    <p>You can delete chats, notes, sounds and video jobs in the app. Deleting the app removes this data from your device, apart from the Keychain note above.</p>
 
     <h2>4. Information shared with OpenRouter and AI providers</h2>
     <p>Rowtr talks to OpenRouter's API directly from your device, using your own API key. Your use of OpenRouter is governed by <a href="https://openrouter.ai/privacy">OpenRouter's Privacy Policy</a> and terms, and OpenRouter forwards requests to the AI provider of the model you choose, whose own policies also apply.</p>
@@ -83,6 +84,7 @@
       <li><strong>Web search</strong> (only if you turn it on for a chat): your message is used by OpenRouter to search the web.</li>
       <li><strong>Dictation</strong>: your voice recording.</li>
       <li><strong>Image generation</strong>: your prompt and any reference images you add to edit or guide the result. Reference images are not stored by the app.</li>
+      <li><strong>Video generation</strong>: your prompt, the settings you choose and any start or end frame images you add. Frame images are not stored by the app. Before each video, the app shows the estimated cost and what will be sent and asks you to confirm. While a video is being made, the app checks its status with OpenRouter and then downloads the finished video. OpenRouter keeps generated videos for a limited time, and video generation is not covered by OpenRouter's zero data retention option.</li>
       <li><strong>Speech</strong>: the text you want read aloud and the voice you choose.</li>
     </ul>
     <p>Rowtr asks for your explicit permission before any of this content is sent. The first time you send something, the app shows a screen that lists what will be sent, names OpenRouter and the company that runs the selected model as the recipients, and lets you choose <strong>Allow</strong> or <strong>Don't Allow</strong>. If you don't allow it, nothing is sent. You can review or withdraw that permission at any time in Settings → Privacy; without it, these features do not send anything.</p>
@@ -93,6 +95,7 @@
     <h3>Requests without your content</h3>
     <ul>
       <li><strong>Model catalog</strong>: the app downloads the public list of models. If you have saved an API key, it is included so OpenRouter can show models available to your account.</li>
+      <li><strong>Image and video model settings</strong>: when you open the image or video screen, the app downloads OpenRouter's public list of the settings each model supports (sizes, durations, prices). No API key is sent.</li>
       <li><strong>Usage and credits</strong>: if you saved an API key, the app asks OpenRouter for your key's usage and limits to show them in Settings.</li>
       <li><strong>Model providers</strong>: when you open a model's page or a chat's settings, the app asks OpenRouter which providers offer that model, with their prices, speed and uptime. If you have saved an API key, it is included.</li>
     </ul>
@@ -100,7 +103,7 @@
     <h2>5. Device permissions</h2>
     <ul>
       <li><strong>Microphone</strong>: used only while you record for dictation. The recording is sent to the model you selected and the temporary recording file is deleted from the device right after it is read.</li>
-      <li><strong>Photo library (add only)</strong>: used only when you tap to save a generated image to Photos. The app cannot read your photos.</li>
+      <li><strong>Photo library (add only)</strong>: used only when you tap to save a generated image or video to Photos. The app cannot read your photos.</li>
     </ul>
     <p>Images, videos, PDFs and reference images you attach are chosen by you through the system pickers; the app only receives the items you select.</p>
 
@@ -137,7 +140,7 @@
     <p>Rowtr, <a href="https://openrouter.ai">OpenRouter</a> model kataloğunu incelemenizi ve yapay zekâ modellerini kendi OpenRouter API anahtarınızla kullanmanızı sağlayan bir iOS uygulamasıdır. Bu politika, uygulamayı kullandığınızda bilgilerinize ne olduğunu açıklar. Rowtr bağımsız bir uygulamadır, OpenRouter ile bağlantılı değildir.</p>
 
     <h2>2. Geliştiricinin topladığı bilgiler</h2>
-    <p>Hiçbiri. Rowtr'ın sunucusu yoktur. Geliştirici API anahtarınızı, istemlerinizi, model yanıtlarını, ses kayıtlarınızı, ürettiğiniz görsel ve sesleri ya da herhangi bir kullanım, cihaz veya tanılama bilgisini almaz. Uygulamada analitik, reklam veya takip yazılımı bulunmaz.</p>
+    <p>Hiçbiri. Rowtr'ın sunucusu yoktur. Geliştirici API anahtarınızı, istemlerinizi, model yanıtlarını, ses kayıtlarınızı, ürettiğiniz görsel, video ve sesleri ya da herhangi bir kullanım, cihaz veya tanılama bilgisini almaz. Uygulamada analitik, reklam veya takip yazılımı bulunmaz.</p>
 
     <h2>3. Cihazınızda saklanan bilgiler</h2>
     <p>Uygulamanın çalışabilmesi için aşağıdakiler yalnızca cihazınızda saklanır:</p>
@@ -146,10 +149,11 @@
       <li>Başlattığınız <strong>sohbetler</strong>; kaldığınız yerden sürdürebilmeniz için kendiliğinden kaydedilir. Sohbete eklediğiniz videolar saklanmaz; sohbetle birlikte yalnızca küçük bir önizleme görseli ve videonun süresi tutulur.</li>
       <li><strong>Kayıtlı notlar</strong>: kaydetmeyi seçtiğiniz dikte notları, üretilen görseller ve sohbet dökümleri.</li>
       <li>Sesli okuma modelleriyle ürettiğiniz ve kendiliğinden kaydedilen <strong>sesler</strong>.</li>
+      <li><strong>Video işleri</strong>: ürettiğiniz her video için istem, seçtiğiniz ayarlar, durum, OpenRouter'ın bildirdiği ücret ve küçük bir önizleme görseli. Video dosyasının kendisi yalnızca uygulamanın önbelleğinde geçici olarak durur ve iOS bu önbelleği her an temizleyebilir; saklamak istediğiniz videoyu Fotoğraflar'a kaydedin.</li>
       <li><strong>Favoriler</strong>, izin tercihiniz, sağlayıcı tercihleriniz ve karşılama ekranlarını tamamlayıp tamamlamadığınız.</li>
       <li>Model listesinin hızlı ve çevrimdışı açılabilmesi için <strong>herkese açık model kataloğunun bir kopyası</strong>.</li>
     </ul>
-    <p>Sohbetleri, notları ve sesleri uygulamada silebilirsiniz. Uygulamayı silmek, yukarıdaki Keychain notu dışında bu verileri cihazınızdan kaldırır.</p>
+    <p>Sohbetleri, notları, sesleri ve video işlerini uygulamada silebilirsiniz. Uygulamayı silmek, yukarıdaki Keychain notu dışında bu verileri cihazınızdan kaldırır.</p>
 
     <h2>4. OpenRouter ve yapay zekâ sağlayıcılarıyla paylaşılan bilgiler</h2>
     <p>Rowtr, OpenRouter API'siyle cihazınızdan doğrudan ve kendi API anahtarınızla konuşur. OpenRouter kullanımınız <a href="https://openrouter.ai/privacy">OpenRouter Gizlilik Politikası</a> ve koşullarına tabidir; OpenRouter istekleri seçtiğiniz modelin yapay zekâ sağlayıcısına iletir ve o sağlayıcının politikaları da geçerlidir.</p>
@@ -160,6 +164,7 @@
       <li><strong>Web araması</strong> (yalnızca bir sohbette açarsanız): mesajınız OpenRouter tarafından web'de arama yapmak için kullanılır.</li>
       <li><strong>Dikte</strong>: ses kaydınız.</li>
       <li><strong>Görsel üretimi</strong>: isteminiz ve sonucu düzenlemek ya da yönlendirmek için eklediğiniz referans görseller. Referans görseller uygulamada saklanmaz.</li>
+      <li><strong>Video üretimi</strong>: isteminiz, seçtiğiniz ayarlar ve eklediğiniz başlangıç veya bitiş karesi görselleri. Kare görselleri uygulamada saklanmaz. Uygulama her videodan önce tahmini ücreti ve neyin gönderileceğini gösterip onayınızı ister. Video hazırlanırken uygulama durumunu OpenRouter'dan sorar, bitince videoyu indirir. OpenRouter üretilen videoları sınırlı bir süre tutar ve video üretimi OpenRouter'ın sıfır veri saklama seçeneğinin kapsamında değildir.</li>
       <li><strong>Sesli okuma</strong>: okunmasını istediğiniz metin ve seçtiğiniz ses.</li>
     </ul>
     <p>Rowtr bu içeriklerden herhangi biri gönderilmeden önce açık izninizi ister. İlk kez bir şey gönderdiğinizde uygulama, neyin gönderileceğini sayan, alıcı olarak OpenRouter'ı ve seçili modeli çalıştıran şirketi adıyla belirten ve <strong>İzin Ver</strong> ya da <strong>İzin Verme</strong> seçmenizi isteyen bir ekran gösterir. İzin vermezseniz hiçbir şey gönderilmez. Bu izni Ayarlar → Gizlilik'ten istediğiniz zaman gözden geçirebilir veya geri çekebilirsiniz; izin olmadan bu özellikler hiçbir şey göndermez.</p>
@@ -170,6 +175,7 @@
     <h3>İçeriğiniz olmadan yapılan istekler</h3>
     <ul>
       <li><strong>Model kataloğu</strong>: uygulama herkese açık model listesini indirir. Kayıtlı bir API anahtarınız varsa, OpenRouter'ın hesabınıza açık modelleri gösterebilmesi için isteğe eklenir.</li>
+      <li><strong>Görsel ve video modeli ayarları</strong>: görsel ya da video ekranını açtığınızda uygulama, her modelin desteklediği ayarların (boyut, süre, fiyat) OpenRouter'daki herkese açık listesini indirir. API anahtarı gönderilmez.</li>
       <li><strong>Kullanım ve kredi</strong>: kayıtlı bir API anahtarınız varsa uygulama, Ayarlar'da göstermek için anahtarınızın kullanımını ve limitlerini OpenRouter'dan ister.</li>
       <li><strong>Model sağlayıcıları</strong>: bir modelin sayfasını ya da bir sohbetin ayarlarını açtığınızda uygulama, o modeli hangi sağlayıcıların sunduğunu fiyat, hız ve erişilebilirlik bilgileriyle OpenRouter'dan ister. Kayıtlı bir API anahtarınız varsa isteğe eklenir.</li>
     </ul>
@@ -177,7 +183,7 @@
     <h2>5. Cihaz izinleri</h2>
     <ul>
       <li><strong>Mikrofon</strong>: yalnızca dikte için kayıt yaparken kullanılır. Kayıt seçtiğiniz modele gönderilir; geçici kayıt dosyası okunduktan hemen sonra cihazdan silinir.</li>
-      <li><strong>Fotoğraf arşivi (yalnızca ekleme)</strong>: yalnızca üretilen bir görseli Fotoğraflar'a kaydetmek için dokunduğunuzda kullanılır. Uygulama fotoğraflarınızı okuyamaz.</li>
+      <li><strong>Fotoğraf arşivi (yalnızca ekleme)</strong>: yalnızca üretilen bir görseli ya da videoyu Fotoğraflar'a kaydetmek için dokunduğunuzda kullanılır. Uygulama fotoğraflarınızı okuyamaz.</li>
     </ul>
     <p>Eklediğiniz görselleri, videoları, PDF'leri ve referans görselleri sistem seçicileriyle siz seçersiniz; uygulama yalnızca seçtiğiniz öğeleri alır.</p>
 
